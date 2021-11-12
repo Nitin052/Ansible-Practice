@@ -1,5 +1,5 @@
-- name: this is first playbook.
-  hosts: n
+- name: this is first test playbook.
+  hosts: Testgroup
   tasks:
-          - name: "create a dummy file on localhost"
+          - name: "create a dummy file on azureuser"
             command: touch /home/azureuser/ansibl.txt
