@@ -2,4 +2,4 @@
   hosts: Testgroup
   tasks:
           - name: "create a dummy file on localhost"
-            command: touch /home/gslab/ansible_dummy.txt
+            command: touch /home/azureuser/ansible_dummy.txt
