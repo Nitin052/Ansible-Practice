@@ -1,11 +1,12 @@
 - name: NETWORK SETUP
-  hosts: 192.2.3.4
+  hosts: localhost
   connection: local
   become: yes
   gather_facts: no
   tasks:
 	- name: ADD NETWORK HOSTS INTO TOWER
   	  tower_host:
+	    name:"192.2.2.2"
     	    inventory: "Test_inventory"
     	    tower_username: GS-3284
     	    tower_password: NS@gslab
