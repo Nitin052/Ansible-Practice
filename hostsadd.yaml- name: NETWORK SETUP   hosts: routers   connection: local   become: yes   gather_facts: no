@@ -1,0 +1,17 @@
+- name: NETWORK SETUP
+  hosts: localhost
+  connection: local
+  become: yes
+  gather_facts: no
+  tasks: 
+    tower_host: 
+      inventory: "Test_inventory "
+      name: "192.2.3.4"
+      tower_host: "https://localhost"
+      tower_password: NS@gslab
+      tower_username: GS-3284
+      variables: 
+        ansible_become: true
+        ansible_become_method: enable
+        
+
