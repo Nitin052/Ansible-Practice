@@ -1,0 +1,15 @@
+- name: NETWORK SETUP
+  hosts: 192.2.3.4
+  connection: local
+  become: yes
+  gather_facts: no
+  tasks:
+	- name: ADD NETWORK HOSTS INTO TOWER
+  	  tower_host:
+    	    inventory: "Test_inventory"
+    	    tower_username: GS-3284
+    	    tower_password: NS@gslab
+    	    tower_host: https://localhost
+    	    variables:
+      	      ansible_become: yes
+      	      ansible_become_method: enable
