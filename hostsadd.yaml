@@ -3,7 +3,8 @@
   connection: local
   become: yes
   gather_facts: no
-  tasks: 
+  tasks:
+  - name:"add hosts"
     tower_host: 
       inventory: "Test_inventory "
       name: "192.2.3.4"
