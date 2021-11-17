@@ -1,4 +1,4 @@
-- hosts: newmaster
+- hosts: VB_inventory
   tasks:
   - debug:
       var: ansible_facts
