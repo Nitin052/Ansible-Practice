@@ -11,5 +11,5 @@
         body:
           name: 192.3.45.5
           enabled: true
-        status_code: 302
+        status_code: 301
       register: login
