@@ -7,9 +7,9 @@
       tower_host:
           name: "192.2.3.4"
           inventory: "Test_inventory"
-          tower_host: "https://localhost"
-          tower_password: NS@gslab 
-          tower_username: GS-3284
+          tower_host: ""
+          tower_password:
+          tower_username: 
           variables: 
              ansible_become: true
              ansible_become_method: enable
