@@ -5,7 +5,7 @@
     tasks:
     - name: Login to a form based webpage.
       uri:
-        url: https://10.136.59.117/api/v2/inventories/23/hosts/
+        url: http://10.136.59.117/api/v2/inventories/23/hosts/
         method: POST
         body_format: form-urlencoded
         body:
