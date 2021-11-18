@@ -3,15 +3,13 @@
     hosts: localhost
     gather_facts: no
     tasks:
-    - name: "add hosts" 
-      tower_host:
-          name: "192.2.3.4"
-          inventory: "Test_inventory"
-          tower_host: ""
-          tower_password:
-          tower_username: 
-          variables: 
-             ansible_become: true
-             ansible_become_method: enable
-        
-
+    - name: Login to a form based webpage.
+      uri:
+        url: https://10.136.59.117/api/v2/inventories/23/hosts/
+        method: POST
+        body_format: form-urlencoded
+        body:
+          name: 192.3.45.5
+          enabled: true
+        status_code: 302
+      register: login
