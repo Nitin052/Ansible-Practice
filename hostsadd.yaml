@@ -6,7 +6,7 @@
     tasks:
     - name: ADD hosts
       uri:
-        url: http://10.136.59.117/api/v2/inventories/{{inventory_id}}/hosts/
+        url: https://10.136.59.117/api/v2/inventories/{{inventory_id}}/hosts/
         method: POST
         user: GS-3284
         password: NS@gslab
