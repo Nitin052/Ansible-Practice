@@ -1,14 +1,19 @@
 ---
-  - name: "NETWORK SETUP"
+  - name: "Post to Tower API"
     hosts: localhost
+    vars:
+      inventory_id: 23
     tasks:
-    - name: Login to a form based webpage.
+    - name: ADD hosts
       uri:
-        url: http://10.136.59.117/api/v2/inventories/23/hosts
+        url: http://10.136.59.117/api/v2/inventories/{{inventory_id}}/hosts/
         method: POST
-        body_format: form-urlencoded
+        user: GS-3284
+        password: NS@gslab
+        status_code: 301
+        body_format: json 
         body:
           name: 192.3.45.5
           enabled: true
-        status_code: 301
-      register: login
+        
+        
