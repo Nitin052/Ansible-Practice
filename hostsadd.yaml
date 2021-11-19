@@ -1,7 +1,6 @@
 ---
   - name: "NETWORK SETUP"
     hosts: localhost
-    gather_facts: no
     tasks:
     - name: Login to a form based webpage.
       uri:
