@@ -8,8 +8,6 @@
       uri:
         url: http://10.136.59.117/api/v2/inventories/{{inventory_id}}/hosts/
         method: POST
-        user: GS-3284
-        password: NS@gslab
         status_code: 301
         body_format: json 
         body:
