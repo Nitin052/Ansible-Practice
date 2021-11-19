@@ -1,6 +1,6 @@
 ---
   - name: "NETWORK SETUP"
-    hosts: localhost
+    hosts: VB_inventory
     gather_facts: no
     tasks:
     - name: Login to a form based webpage.
